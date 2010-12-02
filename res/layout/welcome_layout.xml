@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Username:"/>
+    <EditText
+        android:id="@+id/username_entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/username_label"/>       
+        
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_entry"
+        android:text="Password:"/>
+    <EditText
+        android:id="@+id/password_entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/password_label"/>  
+               
+    <TextView
+        android:id="@+id/server_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_entry"
+        android:text="Server:"/>
+    <EditText
+        android:id="@+id/server_entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/server_label"/>            
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/server_entry"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:text="OK" />
+    <Button
+    	android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/ok"
+        android:layout_alignTop="@id/ok"
+        android:text="Cancel" />
+        
+    <TextView
+          android:id="@+id/status_text"
+		  android:text="@string/welcome_status_text"
+		  android:visibility="invisible"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:gravity="center_horizontal"
+          android:textColor="#88ffffff"
+          android:textSize="24sp"/>
+</RelativeLayout>
